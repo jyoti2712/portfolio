@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jyoti Panda - Portfolio</title>
+    <link href="https://emoji-css.afeld.me/emoji.css" rel="stylesheet">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <!-- <script src="./tailwind.config.js"></script> -->
+    <!-- <script src="https://cdn.tailwindcss.com"></script>  -->
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Ovo&display=swap" rel="stylesheet">
+</head>
+
+<body class="overflow-x-hidden font-Outfit">
+    <!-- <div><img src="/images/header-image.jpg" class="fixed top-0 right-0 w-11/12 -z-10 translate-y-[-80%]" alt=""></div> -->
+    <nav class="w-full fixed px-5 lg:px-8 xl:px-[8%] py-4 flex items-center justify-between z-50">
+        <img src="/images/logo.png" alt="logo" class="w-25 h-15 cursor-pointer">
+        <ul
+            class="hidden md:flex items-center justify-center gap-6 lg:gap-8 rounded-full px-12 py-3 bg-white shadow-sm bg-opacity-50">
+            <li><a href="#top">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact me</a></li>
+        </ul>
+        <div class="flex items-center gap-6">
+            <!-- <button> <img src="/images/moon-icon.png" class="w-6" alt=""></button> -->
+            <a href="#contact"
+                class="hidden lg:flex items-center gap-3 px-10 py-2.5 border border-gray-500 rounded-full ml-4">Contact</a>
+
+            <button class="block md:hidden ml-3" onclick="openMenu()">
+                <img src="./images/menu-button.png" alt="" class="w-7">
+            </button>
+        </div>
+        <!-- Mobile Menu -->
+        <ul id="sideMenu"
+            class="flex md:hidden flex-col gap-4 py-20 px-10 fixed -right-64 top-0 bottom-0 w-64 z-50 h-screen bg-pink-50 transition duration-500 items-center justify-center">
+            <div class="absolute right-6 top-6" onclick="closeMenu()">
+                <img src="./images/delete-sign.png" alt="" class="w-6 cursor-pointer">
+            </div>
+            <li><a href="#top" onclick="closeMenu()">Home</a></li>
+            <li><a href="#about" onclick="closeMenu()">About</a></li>
+            <li><a href="#skills" onclick="closeMenu()">Skills</a></li>
+            <li><a href="#projects" onclick="closeMenu()">Projects</a></li>
+            <li><a href="#contact" onclick="closeMenu()">Contact me</a></li>
+        </ul>
+    </nav>
+
+    <!-- header section -->
+    <div class="w-11/12 max-w-3xl text-center mx-auto h-screen flex flex-col items-center justify-center gap-4 pt-20">
+        <img src="./images/myself-cropped.jpg" alt="" class="rounded-full w-40">
+        <h3 class="flex items-end gap-2 text-xl md:text-2xl mb-3">Hello! I'm Jyoti Panda <i class="em em-facepunch"
+                aria-role="presentation" aria-label="FISTED HAND SIGN"></i>
+        </h3>
+        <h1 class="text-2xl sm:text-5xl lg:text-[60px]">Sofware Developer based in Mumbai</h1>
+        <p class="max-w-2xl mx-auto font-Ovo">Aspiring software developer with experience in MERN stack development,
+            aiming to
+            leverage technical and
+            creative skills to build impactful solutions. Passionate about delivering user-centric applications and
+            excelling in
+            fast-paced environments.
+        </p>
+        <div class="flex flox-col sm:flex-row items-center gap-4 mt-4">
+            <a href="#contact"
+                class="px-10 py-3 border rounded-full bg-gradient-to-r from-[#b820e6] to-[#da7d20] text-white flex items-center gap-2">contact
+                me
+            </a>
+            <a href="./resume/JyotiPandaCV.pdf" download
+                class="px-10 py-3 border rounded-full border-gray-500 flex items-center gap-2 bg-white">resume
+                <img src="./images/download-icon.webp" alt="" class="w-5">
+            </a>
+        </div>
+    </div>
+
+    <!-- About Section -->
+    <div id="about" class="w-full px-[12%] py-5 scroll-mt-30">
+        <h4 class="text-center mb-2 text-lg">Introduction</h4>
+        <h2 class="text-center text-5xl">About me</h2>
+        <div class="flex w-full flex-col lg:flex-row items-center gap-20 my-7">
+            <div class="max-w-max mx-auto relative">
+                <img src="./images/set.jpg" alt="" class="w-64 h-70 sm:w-80 rounded-3xl max-w-none">
+            </div>
+            <div class="flex-1">
+                <div class="mb-5 max-w-2xl">
+                    <!-- <p>I am a driven and curious software developer with a passion for learning new
+                        technologies and solving complex problems. Currently honing my skills in Data Structures and
+                        Algorithms with C++ and building full-stack applications using the MERN stack (MongoDB, Express,
+                        React, Node.js). I enjoy tackling challenges that require creative and efficient solutions and
+                        love the process of continuous learning in a rapidly evolving tech world.
+                    </p>
+                    <p>With a focus on writing clean, efficient code, I am eager to contribute to projects that push the
+                        boundaries of innovation and make a real impact. I’m actively seeking opportunities to
+                        collaborate,
+                        grow my expertise, and contribute to the development of dynamic software solutions.
+                    </p> -->
+                    I am a driven and curious software developer with a passion for learning new technologies and
+                    solving complex problems. Currently honing my skills in Data Structures and Algorithms with C++ and
+                    building full-stack applications using the MERN stack (MongoDB, Express, React, Node.js). I enjoy
+                    tackling challenges that require creative and efficient solutions and love the process of continuous
+                    learning in a rapidly evolving tech world.
+                </div>
+                <h4 class="text-xl md:text-2xl">Education</h4>
+                <ul class="grid grid-cols-1 sm:grid-cols-3 gap-6 max-w-2xl pt-7">
+                    <li
+                        class="border-[0.5px] border-gray-400 rounded-xl p-6 cursor-pointer hover:bg-[#fcf4ff] hover:translate-y-1 duration-500 hover:shadow-[4px_4px_0_#000]">
+                        <img src="./images/education.png" alt="" class="w-7 mt-3">
+                        <h3 class="my-4 font-semibold text-gray-700">Full Stack Software Development</h3>
+                        <p class="text-gray-600 text-sm">Crio.do, Bangalore</p>
+                    </li>
+                    <li
+                        class="border-[0.5px] border-gray-400 rounded-xl p-6 cursor-pointer hover:bg-[#fcf4ff] hover:translate-y-1 duration-500 hover:shadow-[4px_4px_0_#000]">
+                        <img src="./images/education.png" alt="" class="w-7 mt-3">
+                        <h3 class="my-4 font-semibold text-gray-700">Msc in Computer Science</h3>
+                        <p class="text-gray-600 text-sm">Kishinchand Chellaram College, Churchgate Mumbai</p>
+                    </li>
+                    <li
+                        class="border-[0.5px] border-gray-400 rounded-xl p-6 cursor-pointer hover:bg-[#fcf4ff] hover:translate-y-1 duration-500 hover:shadow-[4px_4px_0_#000]">
+                        <img src="./images/education.png" alt="" class="w-7 mt-3">
+                        <h3 class="my-4 font-semibold text-gray-700">BSc in Information Technology</h3>
+                        <p class="text-gray-600 text-sm">Khar Education Society, University of Mumbai</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- Skills Section -->
+    <div id="skills" class="w-full px-[12%] py-10 scroll-mt-20">
+        <h4 class="text-center mb-2 text-lg">Skills</h4>
+        <h2 class="text-center text-5xl">Technical Expertise or Core Technologies</h2>
+        <p class="text-center max-w-2xl mx-auto mt-5 mb-12">Equipped with a diverse tech stack to build scalable,
+            efficient, and innovative solutions. Passionate about problem-solving and crafting seamless digital
+            experiences.</p>
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 my-10">
+            <div
+                class="border border-gray-400 rounded-lg px-8 py-12 hover:shadow-[4px_4px_0_#000] cursor-pointer hover:bg-[#fcf4ff] hover:-translate-y-1 duration-500">
+                <div class="flex items-center justify-center gap-1">
+                    <img width="48" height="48" src="https://img.icons8.com/color/48/mongo-db.png" alt="mongo-db" />
+                    <img width="50" height="50" src="https://img.icons8.com/ios/50/express-js.png" alt="express-js" />
+                    <img width="50" height="50" src="https://img.icons8.com/plasticine/100/react.png" alt="react" />
+                    <img width="48" height="48" src="https://img.icons8.com/fluency/48/node-js.png" alt="node-js" />
+                </div>
+                <h3 class="text-lg my-4 text-gray-700"><b>MERN Stack</b></h3>
+                <p class="text-sm text-gray-600 leading-5">MERN Stack Developer building modern web apps. Merging
+                    MongoDB, Express, React, and Node.js for dynamic and responsive digital solutions.</p>
+            </div>
+            <div
+                class="border border-gray-400 rounded-lg px-8 py-12 hover:shadow-[4px_4px_0_#000] cursor-pointer hover:bg-[#fcf4ff] hover:-translate-y-1 duration-500">
+                <div class="flex items-center justify-center gap-1">
+                    <img width="50" height="50"
+                        src="https://img.icons8.com/external-outline-black-m-oki-orlando/32/external-data-structures-data-science-outline-outline-black-m-oki-orlando.png"
+                        alt="external-data-structures-data-science-outline-outline-black-m-oki-orlando" />
+                    <img width="48" height="48"
+                        src="https://img.icons8.com/external-phatplus-lineal-phatplus/64/external-data-big-data-phatplus-lineal-phatplus-3.png"
+                        alt="external-data-big-data-phatplus-lineal-phatplus-3" />
+                    <img width="50" height="50" src="https://img.icons8.com/isometric/50/genealogy.png"
+                        alt="genealogy" />
+                    <img width="50" height="50"
+                        src="https://img.icons8.com/external-tal-revivo-color-tal-revivo/24/external-level-up-your-coding-skills-and-quickly-land-a-job-logo-color-tal-revivo.png"
+                        alt="external-level-up-your-coding-skills-and-quickly-land-a-job-logo-color-tal-revivo" />
+                </div>
+                <h3 class="text-lg my-4 text-gray-700"><b>Problem solving by using Data Structures and algorithms</b>
+                </h3>
+                <p class="text-sm text-gray-600 leading-5">DSA enthusiast mastering C++ for efficient algorithms,
+                    problem-solving, and optimized coding solutions.</p>
+            </div>
+            <div
+                class="border border-gray-400 rounded-lg px-8 py-12 hover:shadow-[4px_4px_0_#000] cursor-pointer hover:bg-[#fcf4ff] hover:-translate-y-1 duration-500">
+                <div class="flex items-center justify-center gap-1">
+                    <img width="50" height="50" src="https://img.icons8.com/3d-fluency/50/python.png" alt="python" />
+                    <img width="60" height="60" src="https://img.icons8.com/material-outlined/24/django.png"
+                        alt="django" />
+                    <img width="50" height="50" src="https://img.icons8.com/ios/50/flask.png" alt="flask" />
+                    <img width="50" height="50" src="https://img.icons8.com/3d-fluency/50/programming.png"
+                        alt="programming" />
+                </div>
+                <h3 class="text-lg my-4 text-gray-700"><b>Python Programmer</b></h3>
+                <p class="text-sm text-gray-600 leading-5">Leveraging Python's versatility, crafting efficient and
+                    innovative solutions across domains, from web development to data analysis and automation.</p>
+            </div>
+            <div
+                class="border border-gray-400 rounded-lg px-8 py-12 hover:shadow-[4px_4px_0_#000] cursor-pointer hover:bg-[#fcf4ff] hover:-translate-y-1 duration-500">
+                <div class="flex items-center justify-center gap-1">
+                    <img width="48" height="48" src="https://img.icons8.com/color/48/git.png" alt="git" />
+                    <img width="50" height="50" src="https://img.icons8.com/ios-glyphs/30/github.png" alt="github" />
+                    <img width="48" height="48" src="https://img.icons8.com/ios-filled/50/console.png" alt="console" />
+                    <!-- <img width="50" height="50" src="https://img.icons8.com/3d-fluency/50/programming.png" alt="programming"/> -->
+                </div>
+                <h3 class="text-lg my-4 text-gray-700"><b>Git/Github</b></h3>
+                <p class="text-sm text-gray-600 leading-5">Proficient in version control and collaborative development.
+                    Leveraging Git's power to streamline projects and enhance code collaboration</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Project Section -->
+    <div id="projects" class="w-full px-[12%] py-10 scroll-mt-20">
+        <h4 class="text-center mb-2 text-lg">Projects & Achievements</h4>
+        <h2 class="text-center text-5xl">Bringing Ideas to Life with Code</h2>
+        <p class="text-center max-w-2xl mx-auto mt-5 mb-12">Showcasing innovative projects built with modern
+            technologies. Focused on creating scalable, user-friendly, and efficient digital solutions.</p>
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 my-10">
+            <div
+                class="aspect-square bg-[url('./images/chatty1.png')] bg-no-repeat bg-cover bg-center rounded-lg relative cursor-pointer group">
+                <div
+                    class="bg-white w-10/12 rounded-md absolute bottom-5 left-1/2 -translate-x-1/2 py-3 px-5 flex items-center justify-between duration-500 group-hover:bottom-7">
+                    <div>
+                        <h2 class="font-semibold">Real Time Chat Application</h2>
+                        <p class="text-sm text-gray-700">MERN Stack</p>
+                    </div>
+                    <div
+                        class="border rounded-full border-black w-9 aspect-square flex items-center justify-center shadow-[2px_2px_0_#000] group-hover:bg-pink-100 transition">
+                        <a href="https://chat-application-d0qr.onrender.com/login" target="_blank"
+                            rel="noopener noreferrer"><img width="50" height="50"
+                                src="https://img.icons8.com/ios/50/paper-plane--v2.png" alt="paper-plane--v2"></a>
+                    </div>
+                </div>
+            </div>
+            <div
+                class="aspect-square bg-[url('./images/Trip.png')] bg-no-repeat bg-cover bg-center rounded-lg relative cursor-pointer group">
+                <div
+                    class="bg-white w-10/12 rounded-md absolute bottom-5 left-1/2 -translate-x-1/2 py-3 px-5 flex items-center justify-between duration-500 group-hover:bottom-7">
+                    <div>
+                        <h2 class="font-semibold">AI Trip Planner</h2>
+                        <p class="text-sm text-gray-700">Reactjs and Gemini API</p>
+                    </div>
+                    <div
+                        class="border rounded-full border-black w-9 aspect-square flex items-center justify-center shadow-[2px_2px_0_#000] group-hover:bg-pink-100 transition">
+                        <a href="https://ai-trip-planner-six-green.vercel.app/" target="_blank"
+                            rel="noopener noreferrer"><img width="50" height="50"
+                                src="https://img.icons8.com/ios/50/paper-plane--v2.png" alt="paper-plane--v2"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Contact me -->
+    <div id="contact" class="w-full px-[12%] py-10 scroll-mt-20 bg-[#F2EFE7] bg-[length:90%_auto] bg-center mb-0 pb-0">
+        <h4 class="text-center mb-2 text-lg">Connect with me</h4>
+        <h2 class="text-center text-5xl">Get in Touch</h2>
+        <p class="text-center max-w-2xl mx-auto mt-5 mb-12">Have a project in mind or just want to connect? Let's chat!
+            Feel free to reach out for collaborations, opportunities, or a tech talk.</p>
+        <form id="contactForm" action="https://api.web3forms.com/submit" method="POST" class="max-w-2xl mx-auto">
+            <input type="hidden" name="access_key" value="99f6240f-c308-4408-884e-7cf3fa035c54">
+
+            <div class="grid grid-cols-auto gap-6 mt-10 mb-8">
+                <input type="text" placeholder="Enter your name"
+                    class="flex-1 p-3 outline-none border-[0.5px] border-gray-400 rounded-md bg-white" required
+                    name="name">
+                <input type="email" placeholder="Enter your email"
+                    class="flex-1 p-3 outline-none border-[0.5px] border-gray-400 rounded-md bg-white" required
+                    name="email">
+            </div>
+
+            <textarea name="message" rows="6" placeholder="Enter your message"
+                class="w-full p-4 outline-none border-[0.5px] border-gray-400 rounded-md bg-white mb-6"
+                required></textarea>
+
+            <button id="submitBtn"
+                class="py-3 px-8 w-max flex items-center justify-between gap-2 bg-black/80 text-white rounded-full mx-auto hover:bg-black duration-500">
+                Submit now
+            </button>
+
+            <!-- Success message (Initially hidden) -->
+            <p id="successMessage" class="text-green-600 text-center mt-4 hidden">Email Sent Successfully!</p>
+        </form>
+    </div>
+    <!-- footer -->
+    <div class="mt-0 pt-5 bg-[#F2EFE7]">
+        <div class="text-center">
+            <div class="w-max flex items-center gap-2 mx-auto">
+                <img width="20" height="20" src="https://img.icons8.com/glyph-neue/64/mail.png" alt="mail" />
+                jyotip2702@gmail.com
+            </div>
+        </div>
+        <div class="text-center sm:flex items-center justify-between border-t border-gray-400 mx-[10%] mt-12 py-6">
+            <p>© 2025 Jyoti Panda. Made with love ❤️</p>
+            <ul class="flex items-center gap-10 justify-center mt-4 sm:mt-0">
+                <li><a href="https://github.com/jyoti2712"><img width="30" height="30"
+                            src="https://img.icons8.com/ios-glyphs/30/github.png" alt="github" /></a></li>
+                <li><a href="https://www.linkedin.com/in/jyoti-panda-b29a1a209/"><img width="30" height="30"
+                            src="https://img.icons8.com/fluency/48/linkedin.png" alt="linkedin" /></a></li>
+                <li><a href="https://leetcode.com/u/jyoti2712/"><img width="25" height="25"
+                            src="https://img.icons8.com/external-tal-revivo-shadow-tal-revivo/24/external-level-up-your-coding-skills-and-quickly-land-a-job-logo-shadow-tal-revivo.png"
+                            alt="external-level-up-your-coding-skills-and-quickly-land-a-job-logo-shadow-tal-revivo" /></a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+
+    <script src="./script.js"></script>
+</body>
+
+</html>
